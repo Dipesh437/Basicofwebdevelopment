@@ -1,0 +1,161 @@
+
+/* Dipesh Karki - Assignment 2 */
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #253449;
+    line-height: 1.7;
+}
+
+/* Header and navigation */
+header {
+    background-color: #102a43;
+    color: white;
+    padding: 15px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #ffffff;
+    font-size: 23px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #8ecae6;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    background: linear-gradient(135deg, #102a43, #2874a6);
+    color: white;
+    padding: 110px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #102a43;
+    padding: 12px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #bde0fe;
+}
+
+/* General sections */
+section:not(.hero) {
+    padding: 65px 10%;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #102a43;
+    margin-bottom: 20px;
+}
+
+/* About section */
+.about {
+    background-color: white;
+}
+
+.about p {
+    max-width: 850px;
+}
+
+/* Photo gallery */
+.gallery {
+    text-align: center;
+    background-color: #edf4fa;
+}
+
+.gallery p {
+    margin-bottom: 35px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.photo-grid img:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* Future goals section */
+.future {
+    background-color: white;
+    text-align: center;
+}
+
+.future p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+footer p {
+    margin: 0;
+}
