@@ -1,12 +1,129 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimal HTML Page</title>
+    <meta name="author" content="Dipesh Karki">
+    <title>Web Development Assignments – Dipesh Karki</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a minimal HTML page structure.</p>
+    <header class="site-header">
+        <div class="container">
+            <p class="eyebrow">Basics of Web Development</p>
+            <h1>My Web Development Assignments</h1>
+            <p>
+                My name is Dipesh Karki. I am an Information
+                Technology student at Centria University of
+                Applied Sciences. This website presents the
+                assignments I have completed during my
+                Basics of Web Development course.
+            </p>
+
+            <nav aria-label="Exercise sections">
+                <a href="#s-assignments">S Assignments</a>
+                <a href="#a-assignments">A Assignments</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="s-assignments" aria-labelledby="s-header">
+            <h2 id="s-header">S Assignments</h2>
+            <p>Classroom exercises and the skills practised in them.</p>
+
+            <div class="card-grid">
+
+                <article class="card">
+                    <p class="task-id">S2</p>
+                    <h3>Publishing a Web Page</h3>
+                    <p>
+                        I practised creating and publishing
+                        a web page using HTML and GitHub Pages.
+                    </p>
+                    <a class="card-link" href="s2/index.html">Open S2</a>
+                </article>
+
+                <article class="card">
+                    <p class="task-id">S3</p>
+                    <h3>HTML and CSS Practice</h3>
+                    <p>
+                        I practised organizing web page content
+                        and improving its appearance using HTML
+                        and CSS.
+                    </p>
+                    <a class="card-link" href="s3/index.html">Open S3</a>
+                </article>
+
+                <article class="card">
+                    <p class="task-id">S4</p>
+                    <h3>Photo Gallery</h3>
+                    <p>
+                        I created a photo gallery using HTML
+                        and CSS, added descriptive alt text,
+                        and connected web pages with links.
+                    </p>
+                    <a class="card-link" href="s4/index.html">Open S4</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="a-assignments" aria-labelledby="a-header">
+            <h2 id="a-header">A Assignments</h2>
+            <p>Graded assignments and the skills demonstrated in them.</p>
+
+            <div class="card-grid">
+
+                <article class="card">
+                    <p class="task-id">A1</p>
+                    <h3>HTML Structure and CSS</h3>
+                    <p>
+                        I corrected HTML errors, separated
+                        CSS into an external stylesheet,
+                        and validated my web page.
+                    </p>
+                    <a class="card-link" href="a1/index.html">Open A1</a>
+                </article>
+
+                <article class="card">
+                    <p class="task-id">A2</p>
+                    <h3>My Life in Finland</h3>
+                    <p>
+                        I created a personal website with
+                        my own photograph, descriptive alt
+                        text, and external CSS styling.
+                    </p>
+                    <a class="card-link" href="a2/index.html">Open A2</a>
+                </article>
+
+                <article class="card">
+                    <p class="task-id">A3</p>
+                    <h3>Web Development Assignment</h3>
+                    <p>
+                        This assignment demonstrates my
+                        progress in building and organizing
+                        web pages using HTML and CSS.
+                    </p>
+                    <a class="card-link" href="a3/index.html">Open A3</a>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Original template: OpenAI / ChatGPT</p>
+            <p>Modified by: Dipesh Karki</p>
+        </div>
+    </footer>
+
 </body>
 </html>
