@@ -1,0 +1,251 @@
+
+<!--
+    Centria Edu - Basics of Web Development
+
+    Original author: Ville Heikkiniemi
+    Modified by: Dipesh Karki
+    Last modified: 2026-11-08
+
+    S7 - HTML Contact Form
+    Based on the original course template.
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ville Heikkiniemi">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Contact Us | Centria Edu</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <nav aria-label="Main navigation">
+
+                <div class="logo">
+                    centria <span>edu</span>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#topics">Topics</a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#about">About</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html"
+                           aria-current="page">Contact</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+
+                    <span class="label">
+                        Basics of Web Development
+                    </span>
+
+                    <h1>Contact Us</h1>
+
+                    <p>
+                        Have a question, suggestion or feedback?
+                        Please use the contact form below
+                        to send your message.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="topics" id="contact">
+            <div class="container">
+
+                <h2>Contact us</h2>
+
+                <p>
+                    Please complete the form below.
+                    Fields marked with * are required.
+                </p>
+
+                <form class="card"
+                      action="https://httpbin.org/post"
+                      method="post">
+
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label for="name">
+                            Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            autocomplete="name"
+                            placeholder="Enter your name"
+                            required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">
+                            Email address *
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            placeholder="example@email.com"
+                            required>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label for="phone">
+                            Phone number (optional)
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            autocomplete="tel"
+                            placeholder="+358 40 123 4567">
+                    </div>
+
+                    <!-- Subject -->
+                    <div class="form-group">
+                        <label for="subject">
+                            Contact subject *
+                        </label>
+
+                        <select
+                            id="subject"
+                            name="subject"
+                            required>
+
+                            <option value="">
+                                Choose a subject
+                            </option>
+
+                            <option value="feedback">
+                                Feedback
+                            </option>
+
+                            <option value="question">
+                                General Question
+                            </option>
+
+                            <option value="support">
+                                Technical Support
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+                    </div>
+
+                    <!-- Preferred contact method -->
+                    <fieldset class="form-group">
+
+                        <legend>
+                            Preferred contact method
+                        </legend>
+
+                        <label for="contact-email">
+                            <input
+                                type="radio"
+                                id="contact-email"
+                                name="contact_method"
+                                value="email"
+                                checked>
+                            Email
+                        </label>
+
+                        <label for="contact-phone">
+                            <input
+                                type="radio"
+                                id="contact-phone"
+                                name="contact_method"
+                                value="phone">
+                            Phone
+                        </label>
+
+                    </fieldset>
+
+                    <!-- Message -->
+                    <div class="form-group">
+                        <label for="message">
+                            Message *
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message here..."
+                            required></textarea>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit" class="button">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+
+            <p>&copy; 2026 Centria Edu</p>
+
+            <p>
+                Original author: Ville Heikkiniemi
+            </p>
+
+            <p>
+                Modified by: Dipesh Karki
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
